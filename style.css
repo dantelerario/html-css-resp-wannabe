@@ -65,3 +65,87 @@ img{
 .clear {
   clear:both;
 }
+
+/* INIZIO @media query */
+
+@media screen and (max-width: 419px) {
+  * {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Arial;
+    background: #216353;
+  }
+  .row {
+    position: relative;
+    width: 380px;
+  }
+  img {
+    width: 50%;
+    height: auto;
+    background: #edffea;
+  }
+
+  h1 {
+    font-size: 130%;
+    color: #edffea;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 110%;
+    color: #7a4d1d;
+    margin: 10px 0;
+    background: #edffea;
+  }
+
+
+  /* BLOCCO LEZIONI */
+  #lezioni .row > .left, #lezioni .row > .right{
+    width: 100%;
+    float: none;
+    border: 0.5px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0;
+    background: #edffea;
+  }
+
+  #lezioni .row img {
+    /* per centrare orizzontalmente */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #lezioni {
+    text-align: center;
+  }
+
+  /* BLOCCO STEPS */
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right{
+    float: left;
+    width: 30%;
+    border: 0.5px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 6px 0;
+    background: #edffea;
+    font-size: 90%;
+  }
+
+  #steps{
+    text-align: center;
+  }
+
+  /* COMMON */
+
+  .container.grey{
+    background-color: #216353;
+  }
+
+  .clear {
+    clear:both;
+  }
+
+}
