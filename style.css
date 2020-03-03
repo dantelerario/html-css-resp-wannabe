@@ -69,19 +69,20 @@ img{
 /* INIZIO @media query */
 
 @media screen and (max-width: 419px) {
+
   * {
     box-sizing: border-box;
-    margin: 0 auto;
     font-size: 16px;
     font-family: Arial;
     background: #216353;
   }
+
   .row {
     position: relative;
     width: 380px;
     margin: 30px auto 0;
-
   }
+
   img {
     width: 50%;
     height: auto;
